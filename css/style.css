@@ -1,8 +1,13 @@
 body {
   margin: 0 auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  width: 100vw;
+  height: 100vh;
+}
+@media (min-width: 992px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
 }
 
 .navegacion {
@@ -12,8 +17,12 @@ body {
 .nav-contenido {
   background-color: rgb(185, 202, 248);
   display: grid;
-  grid-template-rows: 1fr 5fr;
   height: 100%;
+}
+@media (min-width: 992px) {
+  .nav-contenido {
+    grid-template-rows: 1fr 5fr;
+  }
 }
 
 a {
@@ -54,7 +63,14 @@ a {
 }
 
 .seccion-2 {
-  text-align: center; 
+  text-align: center;
+}
+.seccion-2 h2 {
+  background-color: rgb(185, 202, 248);
+  border: none;
+  font-size: 2rem;
+  color: rgb(24, 83, 248);
+  padding: 0;
 }
 
 .datos {
@@ -62,18 +78,27 @@ a {
   margin: 2rem 0 3rem 0;
   color: rgb(24, 83, 248);
 }
-.datos h2 {
-  background-color: rgb(185, 202, 248);
-  border: none;
-  font-size: 2rem;
-  color: rgb(24, 83, 248);
-  padding: 0;
+@media (max-width: 992px) {
+  .datos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .datos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .datos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .datos a {
   margin: 2rem 1rem 0 2rem;
-  display: grid;
-  grid-template-columns: 10% 90%;
-  gap: 1.5rem;
+  display: flex;
 }
 .datos a:link {
   color: black;
@@ -97,13 +122,6 @@ a {
   height: 3rem;
 }
 
-.habilidades h2 {
-  background-color: rgb(185, 202, 248);
-  border: none;
-  font-size: 2rem;
-  color: rgb(24, 83, 248);
-  padding: 0;
-}
 .habilidades img {
   width: 10rem;
   height: 10rem;
@@ -129,6 +147,11 @@ h2 {
   padding-left: 5rem;
   border-bottom: 0.5rem solid rgba(214, 212, 212, 0.89);
   border-top: 0.5rem solid rgba(214, 212, 212, 0.89);
+}
+@media (max-width: 992px) {
+  h2 {
+    margin-top: 0;
+  }
 }
 
 .fecha {
@@ -167,14 +190,25 @@ h2 {
 }
 
 .cursos .curso {
-  font-size: 2rem;
-  margin-left: 2rem;
+  font-size: 1.5rem;
+  margin: 0 2rem 0rem 2rem;
   display: grid;
   grid-template-columns: 10% 90%;
-  gap: 1rem;
+  gap: 4rem;
+}
+@media (min-width: 480px) {
+  .cursos .curso {
+    font-size: 2rem;
+    gap: 1.5rem;
+  }
 }
 .cursos .curso img {
-  width: 8rem;
+  width: 6rem;
+}
+@media (min-width: 480px) {
+  .cursos .curso img {
+    width: 8rem;
+  }
 }
 .cursos .curso p {
   margin: auto 2rem;
@@ -197,9 +231,18 @@ h2 {
 }
 
 .portafolio .imagenes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   margin: 2rem;
+  display: grid;
+}
+@media (min-width: 480px) {
+  .portafolio .imagenes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .portafolio .imagenes {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .portafolio .imagenes a {
   font-size: 2rem;
