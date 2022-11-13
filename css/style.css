@@ -1,0 +1,265 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.navegacion {
+  max-width: 100%;
+}
+
+.nav-contenido {
+  background-color: rgb(185, 202, 248);
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  background-color: rgb(24, 83, 248);
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  height: 25rem;
+  width: 100%;
+}
+.logo p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0 auto;
+  padding: 5rem 0 5rem 0;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+}
+.logo p span {
+  font-style: italic;
+}
+
+.foto img {
+  margin-top: -10rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10rem;
+  border: 0.5rem double rgb(185, 202, 248);
+}
+
+.seccion-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-2 {
+  text-align: center; 
+}
+
+.datos {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 2rem 0 3rem 0;
+  color: rgb(24, 83, 248);
+}
+.datos h2 {
+  background-color: rgb(185, 202, 248);
+  border: none;
+  font-size: 2rem;
+  color: rgb(24, 83, 248);
+  padding: 0;
+}
+.datos a {
+  margin: 2rem 1rem 0 2rem;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 1.5rem;
+}
+.datos a:link {
+  color: black;
+}
+.datos a:visited {
+  color: black;
+}
+.datos a:hover {
+  color: white;
+}
+.datos a p {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem;
+  padding-top: 0.5rem;
+}
+.datos img {
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.habilidades h2 {
+  background-color: rgb(185, 202, 248);
+  border: none;
+  font-size: 2rem;
+  color: rgb(24, 83, 248);
+  padding: 0;
+}
+.habilidades img {
+  width: 10rem;
+  height: 10rem;
+  gap: 1.5rem;
+}
+.habilidades img:hover {
+  width: 12rem;
+  height: 12rem;
+  transition: 1s;
+}
+
+.contenido {
+  max-width: 100%;
+  background-color: rgb(185, 202, 248);
+  border-left: 0.5rem solid rgba(214, 212, 212, 0.89);
+}
+
+h2 {
+  margin: 2rem 0 2rem 0;
+  font-size: 4rem;
+  color: white;
+  background-color: rgb(24, 83, 248);
+  padding-left: 5rem;
+  border-bottom: 0.5rem solid rgba(214, 212, 212, 0.89);
+  border-top: 0.5rem solid rgba(214, 212, 212, 0.89);
+}
+
+.fecha {
+  color: rgb(107, 105, 105);
+}
+
+.actividades {
+  font-style: italic;
+  font-size: 1.7rem;
+}
+
+.linea {
+  border-bottom: 0.5rem solid rgba(214, 212, 212, 0.89);
+  margin: 0;
+  color: rgba(214, 212, 212, 0.89);
+}
+
+.perfil p {
+  text-align: justify;
+  margin: 2rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+.perfil p span {
+  font-weight: 800;
+}
+
+.formacion p {
+  text-align: justify;
+  margin: 2rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+.formacion p span {
+  font-weight: 800;
+}
+
+.cursos .curso {
+  font-size: 2rem;
+  margin-left: 2rem;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 1rem;
+}
+.cursos .curso img {
+  width: 8rem;
+}
+.cursos .curso p {
+  margin: auto 2rem;
+}
+.cursos .curso:link {
+  color: black;
+}
+.cursos .curso:visited {
+  color: black;
+}
+.cursos .curso:hover {
+  color: white;
+  font-size: 2.2rem;
+  transition: 1s;
+}
+.cursos .curso:hover img {
+  height: 8.1rem;
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.portafolio .imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem;
+}
+.portafolio .imagenes a {
+  font-size: 2rem;
+  text-align: center;
+}
+.portafolio .imagenes a:link {
+  color: black;
+}
+.portafolio .imagenes a:visited {
+  color: black;
+}
+.portafolio .imagenes a:hover {
+  color: white;
+  font-size: 2.5rem;
+  transition: 1s;
+}
+.portafolio .imagenes a:hover img {
+  width: 25rem;
+  height: 25rem;
+  opacity: 0.7;
+  transition: 1s;
+}
+.portafolio .imagenes a p {
+  margin: 0;
+  text-align: center;
+}
+.portafolio .imagenes a img {
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.experiencia p {
+  text-align: justify;
+  margin: 2rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+.experiencia p span {
+  font-weight: 800;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-snap-type: mandatory;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.navegacion,
+.contenido,
+.map {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+/*# sourceMappingURL=style.css.map */
